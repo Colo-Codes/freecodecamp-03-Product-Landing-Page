@@ -117,6 +117,7 @@ nav {
     "title title title"
     "the-shire rivendell mordor";
     justify-items: center;
+    justify-content: center;
 }
 #tour-packages h2 {
     display: block;

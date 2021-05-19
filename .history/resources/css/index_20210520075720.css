@@ -130,7 +130,6 @@ nav {
 #tour-packages #the-shire {
     grid-area: the-shire;
     width: 100%;
-
 }
 #tour-packages #the-shire .img {
     width: 100%;
@@ -144,11 +143,7 @@ nav {
 }
 #tour-packages #rivendell {
     grid-area: rivendell;
-    width: 100%;
-
 }
 #tour-packages #mordor {
     grid-area: mordor;
-    width: 100%;
-
 }

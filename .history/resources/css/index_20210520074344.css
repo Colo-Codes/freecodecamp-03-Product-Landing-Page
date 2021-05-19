@@ -112,43 +112,25 @@ nav {
     display: grid;
     width: 1000px; /* TODO media query */
     margin: 2rem auto 0;
-    grid-template: 3.5rem 400px / 1fr 1fr 1fr; /* TODO media query */
+    grid-template: 2rem 1fr / 1fr 1fr 1fr;
     grid-template-areas:
     "title title title"
     "the-shire rivendell mordor";
-    justify-items: center;
 }
 #tour-packages h2 {
     display: block;
     grid-area: title;
     width: fit-content;
+    margin: 0 auto;
     font-family: 'Aniron', serif;
-}
-#tour-packages h3 {
-    font-family: 'Aniron', serif;
+    height: fit-content;
 }
 #tour-packages #the-shire {
     grid-area: the-shire;
-    width: 100%;
-
-}
-#tour-packages #the-shire .img {
-    width: 100%;
-    height: 80%;
-    /* background-color: blue; */
-    background-image: url(../img/mike-swigunski-CppuxXh6nxE-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 #tour-packages #rivendell {
     grid-area: rivendell;
-    width: 100%;
-
 }
 #tour-packages #mordor {
     grid-area: mordor;
-    width: 100%;
-
 }
