@@ -22,7 +22,7 @@ header {
     display: flex;
     width: 100%; /* TODO media query */
     justify-content: center;
-    background-color: white;
+    background-color: beige;
     flex-flow: wrap;
 }
 header img {
@@ -53,26 +53,11 @@ nav {
     border-radius: 15px;
     justify-items: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 40px -7px;
 }
 #subscribe h2 {
     grid-area: 1/1/2/2;
-    background-color: rgba(0,0,0,.7);
-    width: 100%;
-    height: 100%;
-    padding-top: 10rem;
-    text-align: center;
-    border-radius: 15px 0 0 0;
-    font-family: 'Aniron', serif;
-    font-size: 1.8rem;
-    color: #D6D29A;
 }
 #subscribe form {
     grid-area: 2/1/3/2;
-    background-color: rgba(0,0,0,.7);
-    width: 100%;
-    height: 100%;
-    padding-top: 3rem;
-    text-align: center;
-    border-radius: 0 0 0 15px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 }

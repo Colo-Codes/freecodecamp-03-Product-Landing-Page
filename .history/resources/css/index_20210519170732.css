@@ -1,0 +1,22 @@
+/* My product landing page should have at least one media query. */
+/* My product landing page should utilize CSS flexbox at least once.  */
+@font-face {
+    font-family: 'Hobbiton';
+    src: url(../fonts/hobbiton-brushhand-font/HobbitonBrushhandhobbitonBrush-WygA.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header h1 {
+    font-family: 'Hobbiton', serif;
+    font-size: 3rem;
+}

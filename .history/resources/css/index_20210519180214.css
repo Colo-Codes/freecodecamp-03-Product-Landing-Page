@@ -14,15 +14,18 @@ html {
 	margin: 0;
 	padding: 0;
 }
+body {
+    position: static;
+}
 
 /* Header */
 header {
-    position: fixed; /* on top */
-    top: 0; /* on top */
+    position: fixed;
+    top: 0;
     display: flex;
     width: 100%; /* TODO media query */
     justify-content: center;
-    background-color: white;
+    background-color: beige;
     flex-flow: wrap;
 }
 header img {
@@ -43,36 +46,8 @@ nav {
 /* Subscribe */
 #subscribe {
     display: grid;
-    grid-template: 1fr 1fr / .75fr 1fr;
+    grid-template: 1fr 1fr / 1fr 1fr;
     width: 1000px; /* TODO media query */
     height: 500px; /* TODO media query */
     margin: 10rem auto 0;
-    background-image: url(../img/andres-iga-7XKkJVw1d8c-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    justify-items: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 40px -7px;
-}
-#subscribe h2 {
-    grid-area: 1/1/2/2;
-    background-color: rgba(0,0,0,.7);
-    width: 100%;
-    height: 100%;
-    padding-top: 10rem;
-    text-align: center;
-    border-radius: 15px 0 0 0;
-    font-family: 'Aniron', serif;
-    font-size: 1.8rem;
-    color: #D6D29A;
-}
-#subscribe form {
-    grid-area: 2/1/3/2;
-    background-color: rgba(0,0,0,.7);
-    width: 100%;
-    height: 100%;
-    padding-top: 3rem;
-    text-align: center;
-    border-radius: 0 0 0 15px;
 }

@@ -1,0 +1,51 @@
+/* My product landing page should have at least one media query. */
+/* My product landing page should utilize CSS flexbox at least once.  */
+@font-face {
+    font-family: 'Aniron';
+    src: url(../fonts/aniron-font/Aniron-7BaP.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    /* left: 50%;*/
+    margin: 0 auto;
+    /* margin-left: -20%; */
+    display: flex;
+    width: 100%; /* TODO media query */
+    justify-content: center;
+    background-color: beige;
+    flex-flow: wrap;
+}
+header img {
+    margin-left: 20%; /* TODO media query */
+}
+header h1 {
+    font-family: 'Aniron', serif;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+header p {
+    order: 1;
+}
+nav {
+    margin-left: auto;
+    margin-right: 20%; /* TODO media query */
+}
+/* Subscribe */
+#subscribe {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    width: 1000px; /* TODO media query */
+    height: 400px; /* TODO media query */
+}
