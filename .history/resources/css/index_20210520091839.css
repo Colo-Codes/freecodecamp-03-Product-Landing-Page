@@ -191,6 +191,7 @@ nav {
 
 #tour-packages #the-shire .img {
     background-image: url(../img/mike-swigunski-CppuxXh6nxE-unsplash.jpg);
+    transition: .2s;
 }
 
 #tour-packages #rivendell .img {

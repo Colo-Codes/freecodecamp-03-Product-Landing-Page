@@ -186,37 +186,27 @@ nav {
     margin: auto;
     border-radius: 15px;
     transition: .2s;
-    box-shadow: inset 0px 0px 0px 7px rgba(255, 255, 255, .5), 0 0 5px 5px rgba(0, 0, 0, .2);
 }
 
 #tour-packages #the-shire .img {
     background-image: url(../img/mike-swigunski-CppuxXh6nxE-unsplash.jpg);
+    box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 5px 2px rgba(75, 149, 38, .7);
 }
 
 #tour-packages #rivendell .img {
     background-image: url(../img/LORD-OF-THE-RINGS-Middle-Earth-on-Earth.jpg);
+    box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 5px 2px rgba(108, 79, 13, .7);
 }
 
 #tour-packages #mordor .img {
     background-image: url(../img/mordor.jpg);
+    box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 5px 2px rgba(193, 59, 12, .7);
 }
 
-#tour-packages #the-shire:hover .img,
-#tour-packages #rivendell:hover .img,
-#tour-packages #mordor:hover .img {
+#tour-packages .img:hover {
     transform: scale(1.05);
-    box-shadow:none;
+    box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, .8), 0 0 20px 8px rgba(0, 0, 0, 0.1);
     transition: .2s;
-}
-
-#tour-packages #the-shire:hover .img {
-    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(75, 149, 38, .7);
-}
-#tour-packages #rivendell:hover .img {
-    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(108, 79, 13, .7);
-}
-#tour-packages #mordor:hover .img   {
-    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(193, 59, 12, .7);
 }
 
 #tour-packages p {

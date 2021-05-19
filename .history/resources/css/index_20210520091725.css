@@ -186,19 +186,22 @@ nav {
     margin: auto;
     border-radius: 15px;
     transition: .2s;
-    box-shadow: inset 0px 0px 0px 7px rgba(255, 255, 255, .5), 0 0 5px 5px rgba(0, 0, 0, .2);
 }
 
 #tour-packages #the-shire .img {
     background-image: url(../img/mike-swigunski-CppuxXh6nxE-unsplash.jpg);
+    box-shadow: inset 0px 0px 0px 7px rgba(255, 255, 255, .5), 0 0 15px 1px rgba(0, 0, 0, .7);
+    transition: .2s;
 }
 
 #tour-packages #rivendell .img {
     background-image: url(../img/LORD-OF-THE-RINGS-Middle-Earth-on-Earth.jpg);
+    box-shadow: inset 0px 0px 0px 7px rgba(255, 255, 255, .5), 0 0 15px 1px rgba(0, 0, 0, .7);
 }
 
 #tour-packages #mordor .img {
     background-image: url(../img/mordor.jpg);
+    box-shadow: inset 0px 0px 0px 7px rgba(255, 255, 255, .5), 0 0 15px 1px rgba(0, 0, 0, .7);
 }
 
 #tour-packages #the-shire:hover .img,

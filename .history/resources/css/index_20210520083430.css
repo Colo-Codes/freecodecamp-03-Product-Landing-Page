@@ -1,7 +1,5 @@
 /* My product landing page should have at least one media query. */
-
 /* My product landing page should utilize CSS flexbox at least once.  */
-
 @font-face {
     font-family: 'Aniron';
     src: url(../fonts/aniron-font/Aniron-7BaP.ttf);
@@ -11,58 +9,43 @@ html {
     box-sizing: border-box;
     font-size: 16px;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* Header */
-
 header {
-    position: fixed;
-    /* on top */
-    top: 0;
-    /* on top */
+    position: fixed; /* on top */
+    top: 0; /* on top */
     display: flex;
-    width: 100%;
-    /* TODO media query */
+    width: 100%; /* TODO media query */
     justify-content: center;
     background-color: white;
     flex-flow: wrap;
 }
-
 header img {
-    margin-left: 20%;
-    /* TODO media query */
+    margin-left: 20%; /* TODO media query */
 }
-
 header h1 {
     font-family: 'Aniron', serif;
     font-size: 2rem;
     margin-left: 2rem;
 }
-
 header p {
     order: 1;
 }
-
 nav {
     margin-left: auto;
-    margin-right: 20%;
-    /* TODO media query */
+    margin-right: 20%; /* TODO media query */
 }
-
 /* Subscribe */
-
 #subscribe {
     display: grid;
     grid-template: 1fr 1fr / .75fr 1fr;
-    width: 1000px;
-    /* TODO media query */
-    height: 500px;
-    /* TODO media query */
+    width: 1000px; /* TODO media query */
+    height: 500px; /* TODO media query */
     margin: 10rem auto 0;
     background-image: url(../img/andres-iga-7XKkJVw1d8c-unsplash.jpg);
     background-size: cover;
@@ -72,10 +55,9 @@ nav {
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 40px -7px;
 }
-
 #subscribe h2 {
     grid-area: 1/1/2/2;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0,0,0,.5);
     /* background-image: linear-gradient(to bottom, rgba(137, 121, 92,1), rgba(137, 121, 92,.5)); */
     width: 100%;
     height: 100%;
@@ -88,10 +70,9 @@ nav {
     color: white;
     text-shadow: 0 2px 2px black;
 }
-
 #subscribe form {
     grid-area: 2/1/3/2;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0,0,0,.5);
     /* background-image: linear-gradient(to top, rgba(137, 121, 92,1), rgba(137, 121, 92,.5)); */
     width: 100%;
     height: 100%;
@@ -99,25 +80,19 @@ nav {
     text-align: center;
     border-radius: 0 0 0 15px;
 }
-
 /* Tour preview */
-
 #tour-preview {
     display: flex;
     margin: 4rem auto 0;
-    width: 1000px;
-    /* TODO media query */
+    width: 1000px; /* TODO media query */
 }
-
 #video {
     width: 50%;
 }
-
 #tour-description {
     width: 50%;
     margin-left: 2rem;
 }
-
 #tour-description h2 {
     margin-bottom: 1.5rem;
     font-family: 'Aniron', serif;
@@ -125,100 +100,64 @@ nav {
     word-spacing: -5px;
     font-size: 1.3rem;
 }
-
 #tour-description p {
     margin-bottom: 1rem;
     text-indent: 4rem;
 }
-
 #tour-description p::first-letter {
     font-family: 'Aniron', serif;
 }
-
 /* Tour packages */
-
 #tour-packages {
     display: grid;
-    width: 1000px;
-    /* TODO media query */
+    width: 1000px; /* TODO media query */
     margin: 2rem auto 0;
-    grid-template: 3.5rem 500px / 1fr 1fr 1fr;
-    /* TODO media query */
-    grid-template-areas: "title title title" "the-shire rivendell mordor";
+    grid-template: 3.5rem 500px / 1fr 1fr 1fr; /* TODO media query */
+    grid-template-areas:
+    "title title title"
+    "the-shire rivendell mordor";
     justify-items: center;
-    text-align: center;
 }
-
 #tour-packages h2 {
     display: block;
     grid-area: title;
     width: fit-content;
     font-family: 'Aniron', serif;
 }
-
 #tour-packages h3 {
     font-family: 'Aniron', serif;
     text-align: center;
     margin-bottom: 1rem;
 }
-
 #tour-packages #the-shire {
     grid-area: the-shire;
     width: 100%;
-}
 
-#tour-packages #rivendell {
-    grid-area: rivendell;
-    width: 100%;
 }
-
-#tour-packages #mordor {
-    grid-area: mordor;
-    width: 100%;
-}
-
-#tour-packages .img {
+#tour-packages #the-shire .img {
     width: 90%;
     height: 80%;
+    /* background-color: blue; */
+    background-image: url(../img/mike-swigunski-CppuxXh6nxE-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
     border-radius: 15px;
-    transition: .2s;
-    box-shadow: inset 0px 0px 0px 7px rgba(255, 255, 255, .5), 0 0 5px 5px rgba(0, 0, 0, .2);
+    box-shadow:  0 0 10px 4px rgba(0, 0, 0, 0.2), 0 0 5px 2px rgba(75, 149, 38, .7);
 }
-
-#tour-packages #the-shire .img {
-    background-image: url(../img/mike-swigunski-CppuxXh6nxE-unsplash.jpg);
-}
-
-#tour-packages #rivendell .img {
-    background-image: url(../img/LORD-OF-THE-RINGS-Middle-Earth-on-Earth.jpg);
-}
-
-#tour-packages #mordor .img {
-    background-image: url(../img/mordor.jpg);
-}
-
-#tour-packages #the-shire:hover .img,
-#tour-packages #rivendell:hover .img,
-#tour-packages #mordor:hover .img {
-    transform: scale(1.05);
-    box-shadow:none;
-    transition: .2s;
-}
-
 #tour-packages #the-shire:hover .img {
-    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(75, 149, 38, .7);
+    transform: scale(1.05);
+    box-shadow:  0 0 15px 8px rgba(0, 0, 0, 0.1), 0 0 10px 4px rgba(75, 149, 38, .3);
+    transition: .5s;
 }
-#tour-packages #rivendell:hover .img {
-    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(108, 79, 13, .7);
-}
-#tour-packages #mordor:hover .img   {
-    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(193, 59, 12, .7);
-}
+#tour-packages #rivendell {
+    grid-area: rivendell;
+    width: 100%;
 
-#tour-packages p {
-    margin-top: 1.5rem;
+}
+#tour-packages #mordor {
+    grid-area: mordor;
+    width: 100%;
+
 }
