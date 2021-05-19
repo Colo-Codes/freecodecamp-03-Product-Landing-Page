@@ -57,8 +57,8 @@ nav {
 }
 #subscribe h2 {
     grid-area: 1/1/2/2;
-    background-color: rgba(0,0,0,.5);
-    /* background-image: linear-gradient(to bottom, rgba(137, 121, 92,1), rgba(137, 121, 92,.5)); */
+    background-color: rgba(0,0,0,.7);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.7));
     width: 100%;
     height: 100%;
     padding-top: 10rem;
@@ -66,14 +66,11 @@ nav {
     border-radius: 15px 0 0 0;
     font-family: 'Aniron', serif;
     font-size: 1.8rem;
-    /* color: #D6D29A; */
-    color: white;
-    text-shadow: 0 2px 2px black;
+    color: #D6D29A;
 }
 #subscribe form {
     grid-area: 2/1/3/2;
-    background-color: rgba(0,0,0,.5);
-    /* background-image: linear-gradient(to top, rgba(137, 121, 92,1), rgba(137, 121, 92,.5)); */
+    background-color: rgba(0,0,0,.7);
     width: 100%;
     height: 100%;
     padding-top: 3rem;
