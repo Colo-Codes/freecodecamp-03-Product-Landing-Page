@@ -112,6 +112,8 @@ nav {
     flex-wrap: wrap;
     justify-content:space-around;
     margin: 4rem auto 0;
+    /* width: 1000px; */
+    /* TODO media query */
     width: 100%;
 }
 #tour-preview::before { /* Necessary for managing opacity on background-image */
@@ -168,12 +170,15 @@ nav {
 
 #tour-packages-flex {
     display: flex;
-    flex-wrap: wrap;
-    align-content: top;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+    /* flex-wrap: wrap; */
+    /* align-content: center;
+    justify-content: center; */
+    /* justify-items: center;
+    text-align: center; */
+    width: 1500px;
+    /* TODO media query */
     margin: 2rem auto 0;
+    /* TODO media query */
 }
 
 #tour-packages h3 {
@@ -182,10 +187,19 @@ nav {
     margin-bottom: 1rem;
 }
 
-#tour-packages #tour-packages-flex > * {
+#tour-packages #tour-packages-flex #the-shire {
     width: 250px;
     height: 450px;
-    margin: 0 2.5em;
+}
+
+#tour-packages #tour-packages-flex #rivendell {
+    width: 250px;
+    height: 450px;
+}
+
+#tour-packages #tour-packages-flex #mordor {
+    width: 250px;
+    height: 450px;
 }
 
 #tour-packages .img {
@@ -231,7 +245,7 @@ nav {
 }
 
 #tour-packages p {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 /* Reviews */
