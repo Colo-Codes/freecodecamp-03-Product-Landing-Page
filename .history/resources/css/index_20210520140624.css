@@ -113,13 +113,9 @@ nav ul {
 }
 nav li {
     list-style-type: none;
-}
-nav li a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: .8rem;
     background-image: linear-gradient(to right, black 0%, gray  51%, black  100%);
     background-size: 200% auto;
-    margin: 0 5px 10px;
+    margin: 0 5px;
     padding: 5px 10px;
     text-align: center;
     color: white;            
@@ -127,12 +123,12 @@ nav li a {
     display: block;
     transition: 0.5s;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    text-decoration: none;
+    box-shadow: 0 0 10px 10px black;
+    
 }
 
-nav li a:hover {
-  background-position: right; /* change the direction of the gradient */
+nav li:hover {
+  background-position: right center; /* change the direction of the gradient */
   color: white;
   text-decoration: none;
 }

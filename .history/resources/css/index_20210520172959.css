@@ -115,8 +115,6 @@ nav li {
     list-style-type: none;
 }
 nav li a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: .8rem;
     background-image: linear-gradient(to right, black 0%, gray  51%, black  100%);
     background-size: 200% auto;
     margin: 0 5px 10px;
@@ -128,11 +126,11 @@ nav li a {
     transition: 0.5s;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    text-decoration: none;
+    
 }
 
 nav li a:hover {
-  background-position: right; /* change the direction of the gradient */
+  background-position: right top; /* change the direction of the gradient */
   color: white;
   text-decoration: none;
 }

@@ -116,7 +116,6 @@ nav li {
 }
 nav li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: .8rem;
     background-image: linear-gradient(to right, black 0%, gray  51%, black  100%);
     background-size: 200% auto;
     margin: 0 5px 10px;
