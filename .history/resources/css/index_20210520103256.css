@@ -249,7 +249,7 @@ nav {
     justify-content: center;
 }
 .review-box {
-    width: 300px;
+    width: 350px;
     height: 100px;
     background-color: rgba(0, 0, 0, .1);
     border: 1px dashed rgba(0, 0, 0, .2);
