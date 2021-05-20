@@ -253,9 +253,6 @@ nav li a:active {
     left: 0;
     opacity: .2;
 }
-iframe {
-    border: none;
-}
 
 #video {
     width: 600px;
@@ -297,6 +294,7 @@ iframe {
 #tour-packages-flex {
     display: flex;
     flex-wrap: wrap;
+    /* align-content: top; */
     justify-content: center;
     justify-items: center;
     text-align: center;

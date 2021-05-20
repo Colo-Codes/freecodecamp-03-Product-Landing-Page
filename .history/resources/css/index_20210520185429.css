@@ -253,9 +253,6 @@ nav li a:active {
     left: 0;
     opacity: .2;
 }
-iframe {
-    border: none;
-}
 
 #video {
     width: 600px;
