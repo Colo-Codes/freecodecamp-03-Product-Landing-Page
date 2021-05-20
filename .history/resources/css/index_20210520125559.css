@@ -27,8 +27,8 @@ html {
         display: flex;
         flex-flow: wrap;
         width: 100%;
-        justify-content: center;
-
+        /* TODO media query */
+        justify-items: center;
         background-color: white;
         z-index: 1;
     }
@@ -38,6 +38,7 @@ html {
         justify-items: center;
         justify-content: center;
         margin-left: 20%;
+        /* TODO media query */
     }
     
     header #logo #logo-text {
@@ -48,8 +49,8 @@ html {
     
     header h1 {
         font-family: 'Aniron', serif;
-        font-size: 1.5rem;
-        margin-left: 1rem;
+        font-size: 2rem;
+        margin-left: 2rem;
     }
     
     header p {
@@ -60,7 +61,8 @@ html {
     nav {
         margin-left: auto;
         margin-right: 20%;
-    }
+        /* TODO media query */
+    }   
 }
 @media screen and (max-width: 1023px) {
     header {
@@ -68,9 +70,9 @@ html {
         top: 0; /* on top */
         display: flex;
         flex-flow: wrap;
-        align-items: flex-end;
-        justify-content: center;
         width: 100%;
+        /* TODO media query */
+        justify-items: center;
         background-color: white;
         z-index: 1;
     }
@@ -79,8 +81,10 @@ html {
         flex-wrap: wrap;
         justify-items: center;
         justify-content: center;
+        margin-left: 20%;
+        /* TODO media query */
     }
-    header #logo img {
+    #header #logo img {
         transform: scale(.7);
     }
     header #logo #logo-text {
@@ -102,21 +106,6 @@ html {
         margin-right: 0;
     }   
 }
-#nav-bar {
-    margin: auto;
-}
-
-nav ul {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-nav li {
-    list-style-type: none;
-    padding: 5px 10px 5px;
-    margin: 5px 10px;
-    border: 1px dashed blue;
-}
 
 /* Subscribe */
 @media screen and (min-width: 1024px) {
@@ -124,7 +113,9 @@ nav li {
         display: grid;
         grid-template: 1fr 1fr / .75fr 1fr;
         width: 1000px;
+        /* TODO media query */
         height: 500px;
+        /* TODO media query */
         margin: 10rem auto 0;
         background-image: url(../img/andres-iga-7XKkJVw1d8c-unsplash.jpg);
         background-size: cover;
@@ -144,6 +135,7 @@ nav li {
         border-radius: 15px 0 0 0;
         font-family: 'Aniron', serif;
         font-size: 1.8rem;
+        /* color: #D6D29A; */
         color: white;
         text-shadow: 0 2px 2px black;
     }
@@ -158,11 +150,11 @@ nav li {
     }
     
 }
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
     #subscribe {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 10rem auto 0;
         background-image: url(../img/andres-iga-7XKkJVw1d8c-unsplash.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -170,13 +162,12 @@ nav li {
         justify-items: center;
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 40px -7px;
-        margin-top: 10rem;
     }
     #subscribe h2 {
         background-color: rgba(0, 0, 0, .5);
         width: 100%;
         height: 100%;
-        padding-top: 7rem;
+        padding-top: 5rem;
         text-align: center;
         border-radius: 15px 15px 0 0;
         font-family: 'Aniron', serif;
@@ -194,6 +185,13 @@ nav li {
     }
     
 }
+@media screen and (max-width: 480px){
+    #subscribe {
+        margin: 20rem auto 0;
+    }
+}
+
+
 
 /* Tour preview */
 @media screen and (min-width: 900px) {
