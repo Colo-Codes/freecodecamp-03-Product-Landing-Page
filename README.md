@@ -1,3 +1,6 @@
+# Live project
+This finished live project can be accessed here: https://darthcolo.github.io/freecodecamp-03-Product-Landing-Page/
+
 # Build a Product Landing Page
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
 
