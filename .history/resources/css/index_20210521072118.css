@@ -224,7 +224,6 @@ nav li a:active {
 }
 
 /* Tour preview */
-
 #tour-preview::before {
     /* Necessary for managing opacity on background-image */
     content: "";
@@ -288,6 +287,7 @@ iframe {
 #tour-description p::first-letter {
     font-family: 'Aniron', serif;
 }
+
 
 /* Tour packages */
 

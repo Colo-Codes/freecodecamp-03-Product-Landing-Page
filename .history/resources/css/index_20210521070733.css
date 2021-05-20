@@ -225,23 +225,22 @@ nav li a:active {
 
 /* Tour preview */
 
-#tour-preview::before {
-    /* Necessary for managing opacity on background-image */
-    content: "";
-    position: absolute;
-    background-image: url(../img/LORD-OF-THE-RINGS-Middle-Earth-on-Earth.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: .2;
-}
-
 @media screen and (min-width: 900px) {
     #tour-preview {
         padding: 0 15% 0;
+    }
+    #tour-preview::before {
+        /* Necessary for managing opacity on background-image */
+        content: "";
+        position: absolute;
+        background-image: url(../img/LORD-OF-THE-RINGS-Middle-Earth-on-Earth.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: .2;
     }
 }
 
@@ -259,14 +258,12 @@ iframe {
 }
 
 #video {
-    position: relative;
     width: 600px;
     padding: 1rem 0;
     justify-self: right;
 }
 
 #tour-description {
-    position: relative;
     width: 600px;
     padding: 0 1rem 0 1rem;
     justify-self: left;
@@ -288,6 +285,7 @@ iframe {
 #tour-description p::first-letter {
     font-family: 'Aniron', serif;
 }
+
 
 /* Tour packages */
 

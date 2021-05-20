@@ -225,7 +225,13 @@ nav li a:active {
 
 /* Tour preview */
 
-#tour-preview::before {
+@media screen and (min-width: 900px) {
+    #tour-preview {
+        padding: 0 15% 0;
+    }
+}
+
+#tour-preview::after {
     /* Necessary for managing opacity on background-image */
     content: "";
     position: absolute;
@@ -238,13 +244,6 @@ nav li a:active {
     left: 0;
     opacity: .2;
 }
-
-@media screen and (min-width: 900px) {
-    #tour-preview {
-        padding: 0 15% 0;
-    }
-}
-
 #tour-preview {
     position: relative;
     display: flex;
@@ -259,14 +258,12 @@ iframe {
 }
 
 #video {
-    position: relative;
     width: 600px;
     padding: 1rem 0;
     justify-self: right;
 }
 
 #tour-description {
-    position: relative;
     width: 600px;
     padding: 0 1rem 0 1rem;
     justify-self: left;

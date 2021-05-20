@@ -224,7 +224,6 @@ nav li a:active {
 }
 
 /* Tour preview */
-
 #tour-preview::before {
     /* Necessary for managing opacity on background-image */
     content: "";
@@ -245,28 +244,26 @@ nav li a:active {
     }
 }
 
-#tour-preview {
+/* #tour-preview {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 4rem auto 0;
     width: 100%;
-}
+} */
 
 iframe {
     border: none;
 }
 
 #video {
-    position: relative;
     width: 600px;
     padding: 1rem 0;
     justify-self: right;
 }
 
 #tour-description {
-    position: relative;
     width: 600px;
     padding: 0 1rem 0 1rem;
     justify-self: left;
@@ -288,6 +285,7 @@ iframe {
 #tour-description p::first-letter {
     font-family: 'Aniron', serif;
 }
+
 
 /* Tour packages */
 

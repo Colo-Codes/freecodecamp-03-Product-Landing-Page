@@ -1,0 +1,293 @@
+/* My product landing page should have at least one media query. */
+
+/* My product landing page should utilize CSS flexbox at least once.  */
+
+@font-face {
+    font-family: 'Aniron';
+    src: url(../fonts/aniron-font/Aniron-7BaP.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    /* on top */
+    top: 0;
+    /* on top */
+    display: flex;
+    width: 100%;
+    /* TODO media query */
+    justify-content: center;
+    background-color: white;
+    flex-flow: wrap;
+}
+
+header img {
+    margin-left: 20%;
+    /* TODO media query */
+}
+
+header h1 {
+    font-family: 'Aniron', serif;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+header p {
+    order: 1;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 20%;
+    /* TODO media query */
+}
+
+/* Subscribe */
+
+#subscribe {
+    display: grid;
+    grid-template: 1fr 1fr / .75fr 1fr;
+    width: 1000px;
+    /* TODO media query */
+    height: 500px;
+    /* TODO media query */
+    margin: 10rem auto 0;
+    background-image: url(../img/andres-iga-7XKkJVw1d8c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    justify-items: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 40px -7px;
+}
+
+#subscribe h2 {
+    grid-area: 1/1/2/2;
+    background-color: rgba(0, 0, 0, .5);
+    /* background-image: linear-gradient(to bottom, rgba(137, 121, 92,1), rgba(137, 121, 92,.5)); */
+    width: 100%;
+    height: 100%;
+    padding-top: 10rem;
+    text-align: center;
+    border-radius: 15px 0 0 0;
+    font-family: 'Aniron', serif;
+    font-size: 1.8rem;
+    /* color: #D6D29A; */
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+
+#subscribe form {
+    grid-area: 2/1/3/2;
+    background-color: rgba(0, 0, 0, .5);
+    /* background-image: linear-gradient(to top, rgba(137, 121, 92,1), rgba(137, 121, 92,.5)); */
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    text-align: center;
+    border-radius: 0 0 0 15px;
+}
+
+/* Tour preview */
+
+#tour-preview {
+    position: relative;
+    flex-wrap: wrap;
+    margin: 4rem auto 0;
+    /* width: 1000px; */
+    /* TODO media query */
+    width: 100%;
+    box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, .5);
+}
+#tour-preview::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/LORD-OF-THE-RINGS-Middle-Earth-on-Earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .2;
+}
+
+#video {
+    position: relative;
+    /* width: 50%; */
+    /* flex: 0 1 700px; */
+    /* margin: auto; */
+    padding: 1rem 0;
+    justify-self: right;
+}
+
+#tour-description {
+    position: relative;
+
+    /* width: 50%;
+    margin-left: 2rem; */
+    /* flex: 0 1 700px; */
+    /* margin: auto; */
+    padding: 0 1rem 0 1rem;
+    justify-self: left;
+}
+
+#tour-description h2 {
+    margin-bottom: 1.5rem;
+    font-family: 'Aniron', serif;
+    letter-spacing: -2px;
+    word-spacing: -5px;
+    font-size: 1.3rem;
+}
+
+#tour-description p {
+    margin-bottom: 1rem;
+    text-indent: 4rem;
+}
+
+#tour-description p::first-letter {
+    font-family: 'Aniron', serif;
+}
+
+/* Tour packages */
+
+#tour-packages {
+    display: grid;
+    width: 1000px;
+    /* TODO media query */
+    margin: 2rem auto 0;
+    grid-template: 3.5rem 500px / 1fr 1fr 1fr;
+    /* TODO media query */
+    grid-template-areas: "title title title" "the-shire rivendell mordor";
+    justify-items: center;
+    text-align: center;
+}
+
+#tour-packages h2 {
+    display: block;
+    grid-area: title;
+    width: fit-content;
+    font-family: 'Aniron', serif;
+}
+
+#tour-packages h3 {
+    font-family: 'Aniron', serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#tour-packages #the-shire {
+    grid-area: the-shire;
+    width: 100%;
+}
+
+#tour-packages #rivendell {
+    grid-area: rivendell;
+    width: 100%;
+}
+
+#tour-packages #mordor {
+    grid-area: mordor;
+    width: 100%;
+}
+
+#tour-packages .img {
+    width: 90%;
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 15px;
+    transition: .2s;
+    box-shadow: inset 0px 0px 0px 7px rgba(255, 255, 255, .5), 0 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+#tour-packages #the-shire .img {
+    background-image: url(../img/mike-swigunski-CppuxXh6nxE-unsplash.jpg);
+}
+
+#tour-packages #rivendell .img {
+    background-image: url(../img/LORD-OF-THE-RINGS-Middle-Earth-on-Earth.jpg);
+}
+
+#tour-packages #mordor .img {
+    background-image: url(../img/mordor.jpg);
+}
+
+#tour-packages #the-shire:hover .img,
+#tour-packages #rivendell:hover .img,
+#tour-packages #mordor:hover .img {
+    transform: scale(1.05);
+    box-shadow:none;
+    transition: .2s;
+}
+
+#tour-packages #the-shire:hover .img {
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(75, 149, 38, .7);
+}
+#tour-packages #rivendell:hover .img {
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(108, 79, 13, .7);
+}
+#tour-packages #mordor:hover .img   {
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, .5), 0 0 10px 4px rgba(193, 59, 12, .7);
+}
+
+#tour-packages p {
+    margin-top: 1.5rem;
+}
+
+/* Reviews */
+.checked {
+    color: orange;
+}
+#reviews h2{
+    text-align: center;
+    font-family: 'Aniron', serif;
+    margin-top: 2rem;
+}
+#review-boxes {
+    display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content: center;
+}
+.review-box {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px dashed rgba(0, 0, 0, .2);
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+}
+em {
+    font-style: italic;
+}
+blockquote {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    height: 5rem;
+    background-color:silver;
+    border-top: 2px solid gray;
+}
+footer p {
+    padding-top: 2rem;
+    text-align: center;
+}
