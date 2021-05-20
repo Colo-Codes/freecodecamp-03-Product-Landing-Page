@@ -208,10 +208,9 @@ nav li a:hover {
         padding: 3rem 0 6rem 0;
         border-radius: 0 0 15px 15px;
         flex-flow: column;
-        
-    }
-    #subscribe form input:last-child {
-        margin-top: 2rem;
+        justify-content: end;
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -238,7 +237,7 @@ nav li a:hover {
     color: rgba(255, 255, 255, .6);
 }
 #subscribe form input:last-child {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(255, 255, 255, .8);
     cursor: pointer;
