@@ -101,46 +101,31 @@ nav {
 }
 
 /* Tour preview */
-@media screen and (min-width: 900px) {
-    #tour-preview {
-        padding: 0 15% 0;
-    }
-}
+
 #tour-preview {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
     margin: 4rem auto 0;
     /* width: 1000px; */
     /* TODO media query */
+    background-image: linear-gradient(45deg, rgb(214, 210, 154, .5), rgb(151, 191, 109, .5));
     width: 100%;
-}
-#tour-preview::before { /* Necessary for managing opacity on background-image */
-    content: "";
-    position: absolute;
-    background-image: url(../img/LORD-OF-THE-RINGS-Middle-Earth-on-Earth.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: .2;
+    box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, .5);
 }
 
 #video {
-    width: 600px;
-    /* margin: auto; */
+    /* width: 50%; */
+    flex: 0 1 700px;
+    margin: auto;
     padding: 1rem 0;
     justify-self: right;
-    /* margin: 0 0 0 auto; */
 }
 
 #tour-description {
-    width: 600px;
-    /* margin-left: 2rem; */
-    /* margin: 0 auto 0 0; */
+    /* width: 50%;
+    margin-left: 2rem; */
+    flex: 0 1 700px;
+    margin: auto;
     padding: 0 1rem 0 1rem;
     justify-self: left;
 }

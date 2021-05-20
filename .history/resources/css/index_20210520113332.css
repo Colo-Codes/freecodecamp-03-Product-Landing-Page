@@ -101,16 +101,11 @@ nav {
 }
 
 /* Tour preview */
-@media screen and (min-width: 900px) {
-    #tour-preview {
-        padding: 0 15% 0;
-    }
-}
+
 #tour-preview {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
     margin: 4rem auto 0;
     /* width: 1000px; */
     /* TODO media query */
@@ -134,15 +129,16 @@ nav {
     /* margin: auto; */
     padding: 1rem 0;
     justify-self: right;
-    /* margin: 0 0 0 auto; */
+    background-color: gray;
 }
 
 #tour-description {
     width: 600px;
-    /* margin-left: 2rem; */
-    /* margin: 0 auto 0 0; */
+    margin-left: 2rem;
+    margin: auto;
     padding: 0 1rem 0 1rem;
     justify-self: left;
+    background-color: green;
 }
 
 #tour-description h2 {
