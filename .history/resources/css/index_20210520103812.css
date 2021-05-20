@@ -266,10 +266,9 @@ blockquote {
 
 /* Footer */
 footer {
-    margin-top: 3rem;
     height: 5rem;
     background-color:silver;
-    border-top: 2px solid gray;
+    box-shadow: inset 0 0 3px gray;
 }
 footer p {
     padding-top: 2rem;
